@@ -1,5 +1,5 @@
 # We're using Debian Slim Buster image
-FROM python:3.8.12
+FROM python:3.8.6
 
 ENV PIP_NO_CACHE_DIR 1
 
@@ -74,7 +74,7 @@ COPY ./YoneRobot/config.py* /root/YoneRobot/YoneRobot/
 ENV PATH="/home/bot/bin:$PATH"
 
 # Install requirements
-RUN pip3 install -U -r requirements.txt \ tqdm==4.62.2 \rsa==4.8
+RUN pip3 install -U -r requirements.txt \ tqdm==4.62.2 \ rsa==4.8 \packaging==21.3
 
 # Starting Worker
 CMD ["python3","-m","YoneRobot"]
