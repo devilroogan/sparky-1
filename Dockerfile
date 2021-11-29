@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/YoneRobot
-RUN git clone https://github.com/Sparkymusic/YoneRobot /root/YoneRobot
+RUN git clone https://github.com/Sparkymusic/sparky /root/YoneRobot
 WORKDIR /root/YoneRobot
 
 #Copy config file to /root/YoneRobot/YoneRobot
