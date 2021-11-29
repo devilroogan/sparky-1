@@ -74,3 +74,4 @@ aiogram
 tzlocal==2.0
 Markdown==3.3.6
 Simplejson==3.17.0
+tqdm==4.62.2
